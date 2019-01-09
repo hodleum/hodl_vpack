@@ -28,6 +28,6 @@
             "debug": {
                 "log_to": ["h_notify", "<wallet_id>"]
             }
-        },
+        }
     }
 }
