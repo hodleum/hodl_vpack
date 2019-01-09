@@ -1,0 +1,33 @@
+{
+    "f_details": {
+        "file": "index.json@hodleum.org",
+        "version": {
+            "major": 0,
+            "minor": 1,
+            "build": 0
+        }
+    },
+
+    "sc_data":{
+        "name": "BashKa",
+        "uuid": "dofk2-2dwd23-f3f23-323r23-f322f0",
+        "version": {
+            "major": 0,
+            "minor": 1,
+            "build": 0
+        },
+        "data":{
+            "permissions": {
+                "default": [],
+                "by_request": []
+            },
+            "run_d": {
+                "first": null,
+                "main": "start.sh"
+            },
+            "debug": {
+                "log_to": ["h_notify", "<wallet_id>"]
+            }
+        },
+    }
+}
