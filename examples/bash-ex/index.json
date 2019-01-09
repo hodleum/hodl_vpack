@@ -1,4 +1,5 @@
 {
+    "$schema":"https://hodleum.org/json/contract.json",
     "f_details": {
         "file": "index.json@hodleum.org",
         "version": {
@@ -10,7 +11,7 @@
 
     "sc_data":{
         "name": "BashKa",
-        "uuid": "dofk2-2dwd23-f3f23-323r23-f322f0",
+        "uuid": "195a2dce-f610-41c9-9178-3b1a19963e48",
         "version": {
             "major": 0,
             "minor": 1,
