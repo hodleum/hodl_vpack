@@ -27,7 +27,7 @@
                 "main": "start.sh"
             },
             "debug": {
-                "log_to": ["h_notify", "<wallet_id>"]
+                "log_to": [["h_notify", "<wallet_id>"], ["local_logger"]]
             }
         }
     }
