@@ -20,8 +20,6 @@ def cgrp():
         csudo()
 
 
-
-
 def cuser(uname, shell="/bin/bash"):
     cgrp()
     encPass = crypt.crypt(str(uuid.uuid4()), "22")

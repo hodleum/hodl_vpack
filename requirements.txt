@@ -1,3 +1,4 @@
 flask
 flask-restplus
 psutil
+python-vagrant

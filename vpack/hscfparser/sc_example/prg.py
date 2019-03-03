@@ -1,4 +1,4 @@
-from hdn import *
+from vpack.hdn import *
 
 app = HDNWorker("example-token-0")
 
