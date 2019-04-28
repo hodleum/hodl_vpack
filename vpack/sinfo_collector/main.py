@@ -36,5 +36,6 @@ class ScList(Resource):
         Returns JSON: {'code':<if not users: return 0 | else return 1>, "data": {"ulist":<list of users>}}
         """
 
+
 if __name__ == '__main__':
     app.run(debug=True)

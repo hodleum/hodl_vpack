@@ -5,6 +5,7 @@ import subprocess
 class VM:
     AUTO_DEL = True
     ALREADY_SUSPENDED = False
+
     class Task:
         def __init__(self, file, state="running"):
             pass
@@ -24,7 +25,7 @@ class VM:
                 self.vagr.suspend()
                 self.ALREADY_SUSPENDED = True
         if self.vagr.status()[0].state == "saved":
-                self.ALREADY_SUSPENDED = True
+            self.ALREADY_SUSPENDED = True
         if self.vagr.status()[0].state != "running" and autostart:
             self.vagr.up()
             self.ALREADY_SUSPENDED = False
@@ -34,6 +35,7 @@ class VM:
             self.vagr.suspend()
         except subprocess.CalledProcessError:
             print("Some Problems Happened in Suspending Process. Please, suspend it manually")
+
     def start(self):
         if self.vagr.status()[0].state != "running":
             self.vagr.up()

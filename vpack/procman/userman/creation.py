@@ -22,10 +22,10 @@ def cgrp():
 
 def cuser(uname, shell="/bin/bash"):
     cgrp()
-    encPass = crypt.crypt(str(uuid.uuid4()), "22")
-    print(os.system("sudo useradd -p " + encPass +  # TODO: Process execution!
-          " -s" + shell + " -g scgrp" + " -d " + "/home/" + uname + " -m " +
-          " -c \"" + uname + "\" " + uname))
+    encpass = crypt.crypt(str(uuid.uuid4()), "22")
+    print(os.system("sudo useradd -p " + encpass +  # TODO: Process execution!
+                    " -s" + shell + " -g scgrp" + " -d " + "/home/" + uname + " -m " +
+                    " -c \"" + uname + "\" " + uname))
 
 
 if __name__ == '__main__':
